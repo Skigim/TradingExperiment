@@ -121,7 +121,7 @@ const PORTFOLIOS: Record<string, Portfolio> = {
   }
 };
 
-// Updated Data through Jan 13, 2026 (Close)
+// Updated Data through Jan 20, 2026 (Close)
 const RAW_DATA: DataPoint[] = [
   { date: "Dec 26 '25", original: 1000.00, boglehead: 1000.00, aristocrat: 1000.00, speculator: 1000.00, quant: 1000.00, esg: 1000.00, benchmark: 690.31 },
   { date: "Dec 29 '25", original: 996.17, boglehead: 997.46, aristocrat: 1000.24, speculator: 974.87, quant: 974.87, esg: 996.27, benchmark: 687.90 },
@@ -135,6 +135,10 @@ const RAW_DATA: DataPoint[] = [
   { date: "Jan 09 '26", original: 1009.50, boglehead: 1007.80, aristocrat: 1008.40, speculator: 998.70, quant: 1035.50, esg: 1006.10, benchmark: 694.40 },
   { date: "Jan 12 '26", original: 1021.60, boglehead: 1012.20, aristocrat: 1011.50, speculator: 1014.20, quant: 1051.80, esg: 1018.40, benchmark: 700.10 },
   { date: "Jan 13 '26", original: 1013.20, boglehead: 1009.80, aristocrat: 1010.50, speculator: 995.40, quant: 1048.90, esg: 1011.20, benchmark: 696.50 },
+  { date: "Jan 14 '26", original: 1026.37, boglehead: 1016.87, aristocrat: 1014.54, speculator: 1020.29, quant: 1059.39, esg: 1022.32, benchmark: 702.77 },
+  { date: "Jan 15 '26", original: 1009.95, boglehead: 1009.75, aristocrat: 1011.50, speculator: 989.68, quant: 1055.15, esg: 1010.05, benchmark: 695.74 },
+  { date: "Jan 16 '26", original: 1016.01, boglehead: 1012.78, aristocrat: 1013.52, speculator: 1001.56, quant: 1058.32, esg: 1015.10, benchmark: 698.52 },
+  { date: "Jan 20 '26", original: 1034.30, boglehead: 1022.91, aristocrat: 1019.60, speculator: 1026.60, quant: 1066.79, esg: 1028.30, benchmark: 706.20 },
 ];
 
 const LESSONS: Lesson[] = [
@@ -150,6 +154,10 @@ const LESSONS: Lesson[] = [
   { id: 10, title: "CPI & Discount Rates", date: "Jan 08", icon: TrendingDown, content: "Hot inflation (CPI) forces the Fed to keep rates high. Higher rates make future Tech earnings worth less today, hurting Growth stocks most." },
   { id: 11, title: "Merger Monday", date: "Jan 12", icon: Users, content: "Mondays often see rallying stock prices driven by M&A (Merger & Acquisition) deals announced over the weekend. Corporate optimism spreads to the broader market." },
   { id: 12, title: "Earnings Season Jitters", date: "Jan 13", icon: Briefcase, content: "Before big banks report earnings (start of season), volatility spikes. Smart money often trims 'High Beta' positions to protect capital in case the reports are bad." },
+  { id: 13, title: "AI Bid Returns", date: "Jan 14", icon: Zap, content: "AI optimism sparked a rebound. The Original leaned into growth, Boglehead stayed fully invested, Aristocrat held steady, Speculator chased momentum, Quant kept risk rules, ESG rode clean-energy strength, and SPY climbed." },
+  { id: 14, title: "Rate-Scare Pullback", date: "Jan 15", icon: AlertTriangle, content: "A rate scare pressured duration-sensitive assets. The Original trimmed risk, Boglehead held course, Aristocrat cushioned the dip, Speculator sold off hardest, Quant cut beta, ESG slipped, and the benchmark eased." },
+  { id: 15, title: "Options Expiration Pin", date: "Jan 16", icon: Calendar, content: "Options expiry muted volatility before a late rebound. The Original recovered modestly, Boglehead stayed diversified, Aristocrat inched up, Speculator bounced, Quant kept a cash buffer, ESG improved, and SPY finished higher." },
+  { id: 16, title: "Post-Holiday Risk-On", date: "Jan 20", icon: TrendingUp, content: "After the MLK break, earnings optimism reignited risk appetite. The Original added exposure, Boglehead captured the broad lift, Aristocrat advanced, Speculator chased upside, Quant re-risked, ESG strengthened, and SPY pushed higher." },
 ];
 
 // --- COMPONENTS ---
@@ -439,7 +447,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Experiment 2026</h1>
-              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 13, 2026 (Close)</p>
+              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 20, 2026 (Close)</p>
             </div>
           </div>
           
