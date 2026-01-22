@@ -139,6 +139,7 @@ const RAW_DATA: DataPoint[] = [
   { date: "Jan 15 '26", original: 1009.95, boglehead: 1009.75, aristocrat: 1011.50, speculator: 989.68, quant: 1055.15, esg: 1010.05, benchmark: 695.74 },
   { date: "Jan 16 '26", original: 1016.01, boglehead: 1012.78, aristocrat: 1013.52, speculator: 1001.56, quant: 1058.32, esg: 1015.10, benchmark: 698.52 },
   { date: "Jan 20 '26", original: 1034.30, boglehead: 1022.91, aristocrat: 1019.60, speculator: 1026.60, quant: 1066.79, esg: 1028.30, benchmark: 706.20 },
+  { date: "Jan 21 '26", original: 1052.92, boglehead: 1035.18, aristocrat: 1028.78, speculator: 1052.26, quant: 1081.73, esg: 1041.67, benchmark: 714.39 },
 ];
 
 const LESSONS: Lesson[] = [
@@ -158,6 +159,7 @@ const LESSONS: Lesson[] = [
   { id: 14, title: "Rate-Scare Pullback", date: "Jan 15", icon: AlertTriangle, content: "A rate scare pressured duration-sensitive assets. The Original trimmed risk, Boglehead held course, Aristocrat cushioned the dip, Speculator sold off hardest, Quant cut beta, ESG slipped, and the benchmark eased." },
   { id: 15, title: "Options Expiration Pin", date: "Jan 16", icon: Calendar, content: "Options expiry muted volatility before a late rebound. The Original recovered modestly, Boglehead stayed diversified, Aristocrat inched up, Speculator bounced, Quant kept a cash buffer, ESG improved, and SPY finished higher." },
   { id: 16, title: "Post-Holiday Risk-On", date: "Jan 20", icon: TrendingUp, content: "After the MLK break, earnings optimism reignited risk appetite. The Original added exposure, Boglehead captured the broad lift, Aristocrat advanced, Speculator chased upside, Quant re-risked, ESG strengthened, and SPY pushed higher." },
+  { id: 17, title: "Tariff Relief Rally", date: "Jan 21", icon: TrendingUp, content: "Markets rebounded sharply after tariff fears eased. The Original led on tech strength, Boglehead tracked the broad lift, Aristocrat gained modestly, Speculator surged on risk-on sentiment, Quant captured gains with discipline, ESG advanced, and SPY recovered." },
 ];
 
 // --- COMPONENTS ---
@@ -447,7 +449,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Experiment 2026</h1>
-              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 20, 2026 (Close)</p>
+              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 21, 2026 (Close)</p>
             </div>
           </div>
           
