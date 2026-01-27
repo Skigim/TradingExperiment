@@ -121,7 +121,7 @@ const PORTFOLIOS: Record<string, Portfolio> = {
   }
 };
 
-// Updated Data through Jan 20, 2026 (Close)
+// Updated Data through Jan 27, 2026 (Close)
 const RAW_DATA: DataPoint[] = [
   { date: "Dec 26 '25", original: 1000.00, boglehead: 1000.00, aristocrat: 1000.00, speculator: 1000.00, quant: 1000.00, esg: 1000.00, benchmark: 690.31 },
   { date: "Dec 29 '25", original: 996.17, boglehead: 997.46, aristocrat: 1000.24, speculator: 974.87, quant: 974.87, esg: 996.27, benchmark: 687.90 },
@@ -140,6 +140,10 @@ const RAW_DATA: DataPoint[] = [
   { date: "Jan 16 '26", original: 1016.01, boglehead: 1012.78, aristocrat: 1013.52, speculator: 1001.56, quant: 1058.32, esg: 1015.10, benchmark: 698.52 },
   { date: "Jan 20 '26", original: 1034.30, boglehead: 1022.91, aristocrat: 1019.60, speculator: 1026.60, quant: 1066.79, esg: 1028.30, benchmark: 706.20 },
   { date: "Jan 21 '26", original: 1052.92, boglehead: 1035.18, aristocrat: 1028.78, speculator: 1052.26, quant: 1081.73, esg: 1041.67, benchmark: 714.39 },
+  { date: "Jan 22 '26", original: 1040.28, boglehead: 1028.97, aristocrat: 1026.72, speculator: 1031.21, quant: 1073.08, esg: 1032.29, benchmark: 710.82 },
+  { date: "Jan 23 '26", original: 1054.84, boglehead: 1037.20, aristocrat: 1030.83, speculator: 1053.90, quant: 1083.81, esg: 1043.65, benchmark: 716.51 },
+  { date: "Jan 26 '26", original: 1062.22, boglehead: 1042.39, aristocrat: 1033.92, speculator: 1069.71, quant: 1092.48, esg: 1049.91, benchmark: 720.09 },
+  { date: "Jan 27 '26", original: 1056.91, boglehead: 1040.31, aristocrat: 1034.95, speculator: 1050.46, quant: 1089.20, esg: 1045.71, benchmark: 718.65 },
 ];
 
 const LESSONS: Lesson[] = [
@@ -160,6 +164,10 @@ const LESSONS: Lesson[] = [
   { id: 15, title: "Options Expiration Pin", date: "Jan 16", icon: Calendar, content: "Options expiry muted volatility before a late rebound. The Original recovered modestly, Boglehead stayed diversified, Aristocrat inched up, Speculator bounced, Quant kept a cash buffer, ESG improved, and SPY finished higher." },
   { id: 16, title: "Post-Holiday Risk-On", date: "Jan 20", icon: TrendingUp, content: "After the MLK break, earnings optimism reignited risk appetite. The Original added exposure, Boglehead captured the broad lift, Aristocrat advanced, Speculator chased upside, Quant re-risked, ESG strengthened, and SPY pushed higher." },
   { id: 17, title: "Tariff Relief Rally", date: "Jan 21", icon: TrendingUp, content: "Markets rebounded sharply after tariff fears eased. The Original led on tech strength, Boglehead tracked the broad lift, Aristocrat gained modestly, Speculator surged on risk-on sentiment, Quant captured gains with discipline, ESG advanced, and SPY recovered." },
+  { id: 18, title: "Profit-Taking Fade", date: "Jan 22", icon: TrendingDown, content: "The relief rally cooled as traders locked in gains. The Original trimmed some AI beta, Boglehead stayed fully invested, Aristocrat leaned on dividends, Speculator felt the pullback, Quant cut exposure per risk rules, ESG softened, and SPY slipped." },
+  { id: 19, title: "Dip Buyers Return", date: "Jan 23", icon: TrendingUp, content: "Buyers stepped back in on better breadth. The Original re-added growth, Boglehead tracked the broad bounce, Aristocrat steadied returns, Speculator chased momentum, Quant added risk within limits, ESG rode clean-energy strength, and SPY reclaimed ground." },
+  { id: 20, title: "Earnings Warm-Up", date: "Jan 26", icon: Briefcase, content: "Ahead of mega-cap reports, optimism lifted risk appetite. The Original leaned into tech, Boglehead captured the steady climb, Aristocrat ground higher, Speculator pressed the rally, Quant stayed systematic, ESG advanced, and SPY inched higher." },
+  { id: 21, title: "Choppy Tape Caution", date: "Jan 27", icon: AlertTriangle, content: "Choppy trading sparked selective de-risking. The Original pared winners, Boglehead held course, Aristocrat eked out stability, Speculator saw a sharp giveback, Quant trimmed marginal signals, ESG cooled, and SPY eased slightly." },
 ];
 
 // --- COMPONENTS ---
@@ -449,7 +457,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Experiment 2026</h1>
-              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 21, 2026 (Close)</p>
+              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 27, 2026 (Close)</p>
             </div>
           </div>
           
