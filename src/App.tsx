@@ -121,7 +121,7 @@ const PORTFOLIOS: Record<string, Portfolio> = {
   }
 };
 
-// Updated Data through Jan 27, 2026 (Close)
+// Updated Data through Feb 06, 2026 (Close)
 const RAW_DATA: DataPoint[] = [
   { date: "Dec 26 '25", original: 1000.00, boglehead: 1000.00, aristocrat: 1000.00, speculator: 1000.00, quant: 1000.00, esg: 1000.00, benchmark: 690.31 },
   { date: "Dec 29 '25", original: 996.17, boglehead: 997.46, aristocrat: 1000.24, speculator: 974.87, quant: 974.87, esg: 996.27, benchmark: 687.90 },
@@ -144,6 +144,14 @@ const RAW_DATA: DataPoint[] = [
   { date: "Jan 23 '26", original: 1054.84, boglehead: 1037.20, aristocrat: 1030.83, speculator: 1053.90, quant: 1083.81, esg: 1043.65, benchmark: 716.51 },
   { date: "Jan 26 '26", original: 1062.22, boglehead: 1042.39, aristocrat: 1033.92, speculator: 1069.71, quant: 1092.48, esg: 1049.91, benchmark: 720.09 },
   { date: "Jan 27 '26", original: 1056.91, boglehead: 1040.31, aristocrat: 1034.95, speculator: 1050.46, quant: 1089.20, esg: 1045.71, benchmark: 718.65 },
+  { date: "Jan 28 '26", original: 1064.31, boglehead: 1044.47, aristocrat: 1038.05, speculator: 1063.07, quant: 1095.74, esg: 1050.94, benchmark: 722.96 },
+  { date: "Jan 29 '26", original: 1057.92, boglehead: 1041.34, aristocrat: 1037.01, speculator: 1047.12, quant: 1091.36, esg: 1045.69, benchmark: 720.07 },
+  { date: "Jan 30 '26", original: 1066.38, boglehead: 1046.55, aristocrat: 1041.16, speculator: 1060.73, quant: 1099.00, esg: 1051.96, benchmark: 725.11 },
+  { date: "Feb 02 '26", original: 1070.65, boglehead: 1049.69, aristocrat: 1043.24, speculator: 1069.22, quant: 1103.40, esg: 1055.12, benchmark: 727.29 },
+  { date: "Feb 03 '26", original: 1065.30, boglehead: 1045.49, aristocrat: 1042.20, speculator: 1056.39, quant: 1097.88, esg: 1048.79, benchmark: 723.65 },
+  { date: "Feb 04 '26", original: 1074.89, boglehead: 1050.72, aristocrat: 1045.33, speculator: 1073.29, quant: 1106.66, esg: 1056.13, benchmark: 727.99 },
+  { date: "Feb 05 '26", original: 1070.59, boglehead: 1048.62, aristocrat: 1045.33, speculator: 1063.63, quant: 1103.34, esg: 1051.91, benchmark: 725.81 },
+  { date: "Feb 06 '26", original: 1077.01, boglehead: 1052.81, aristocrat: 1048.47, speculator: 1074.27, quant: 1108.86, esg: 1057.17, benchmark: 729.44 },
 ];
 
 const LESSONS: Lesson[] = [
@@ -168,6 +176,14 @@ const LESSONS: Lesson[] = [
   { id: 19, title: "Dip Buyers Return", date: "Jan 23", icon: TrendingUp, content: "Buyers stepped back in on better breadth. The Original re-added growth, Boglehead tracked the broad bounce, Aristocrat steadied returns, Speculator chased momentum, Quant added risk within limits, ESG rode clean-energy strength, and SPY reclaimed ground." },
   { id: 20, title: "Earnings Warm-Up", date: "Jan 26", icon: Briefcase, content: "Ahead of mega-cap reports, optimism lifted risk appetite. The Original leaned into tech, Boglehead captured the steady climb, Aristocrat ground higher, Speculator pressed the rally, Quant stayed systematic, ESG advanced, and SPY inched higher." },
   { id: 21, title: "Choppy Tape Caution", date: "Jan 27", icon: AlertTriangle, content: "Choppy trading sparked selective de-risking. The Original pared winners, Boglehead held course, Aristocrat eked out stability, Speculator saw a sharp giveback, Quant trimmed marginal signals, ESG cooled, and SPY eased slightly." },
+  { id: 22, title: "Earnings Relief Bid", date: "Jan 28", icon: TrendingUp, content: "Encouraging tech earnings restored risk appetite. The Original added to growth, Boglehead rode the lift, Aristocrat improved modestly, Speculator jumped hardest, Quant re-risked methodically, ESG advanced, and SPY climbed." },
+  { id: 23, title: "Rate Talk Hangover", date: "Jan 29", icon: AlertTriangle, content: "Fed commentary rekindled rate anxiety. The Original and ESG slipped, Boglehead held steady, Aristocrat cushioned the move, Speculator sold off, Quant trimmed exposure, and SPY eased." },
+  { id: 24, title: "Month-End Rebalance", date: "Jan 30", icon: Calendar, content: "Month-end flows pushed equities higher. The Original leaned into the bid, Boglehead tracked the broad lift, Aristocrat ground up, Speculator chased momentum, Quant stayed systematic, ESG strengthened, and SPY finished firm." },
+  { id: 25, title: "Fresh Month Inflows", date: "Feb 02", icon: BarChart2, content: "New-month allocations favored risk assets. The Original added exposure, Boglehead captured the drift, Aristocrat steadied returns, Speculator pushed higher, Quant added within limits, ESG ticked up, and SPY advanced." },
+  { id: 26, title: "Data-Driven Dip", date: "Feb 03", icon: TrendingDown, content: "Soft data prints triggered a risk-off move. The Original trimmed gains, Boglehead slipped modestly, Aristocrat stayed resilient, Speculator dropped sharply, Quant reduced beta, ESG faded, and SPY pulled back." },
+  { id: 27, title: "AI Earnings Pop", date: "Feb 04", icon: Zap, content: "AI leaders beat expectations and reignited the rally. The Original surged, Boglehead rose with the market, Aristocrat edged higher, Speculator spiked, Quant followed its signals, ESG rallied, and SPY rebounded." },
+  { id: 28, title: "Profit-Taking Pause", date: "Feb 05", icon: AlertTriangle, content: "Traders locked in gains ahead of the next data print. The Original and ESG eased, Boglehead softened, Aristocrat held flat, Speculator cooled, Quant de-risked slightly, and SPY dipped." },
+  { id: 29, title: "Jobs Resilience", date: "Feb 06", icon: Briefcase, content: "A steady jobs report reinforced the soft-landing narrative. The Original pressed higher, Boglehead climbed, Aristocrat advanced, Speculator rebounded, Quant kept risk on, ESG improved, and SPY closed higher." },
 ];
 
 // --- COMPONENTS ---
@@ -457,7 +473,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Experiment 2026</h1>
-              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Jan 27, 2026 (Close)</p>
+              <p className="text-xs text-slate-400">Simulated Portfolio Tracker • Updated Feb 06, 2026 (Close)</p>
             </div>
           </div>
           
